@@ -24,14 +24,14 @@ my $decrypt = '';
 
 FINDMD5: 
 foreach my $result ( @{ $json->{responseData}->{results} } ) {
-	$result->{content} =~ s/&quot;//g;
-	for my $word ( split / /, $result->{content} ) {
+    $result->{content} =~ s/&quot;//g;
+    for my $word ( split / /, $result->{content} ) {
         $word =~ s/^\s+|\s+$//g;
-		if ( $md5_hash eq md5_hex $word ) {
+        if ( $md5_hash eq md5_hex $word ) {
             $decrypt = $word;
             last FINDMD5;
         }
-	}
+    }
 }
 
 die "Hash search unsuccessful" if $decrypt eq '';
