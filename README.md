@@ -1,5 +1,5 @@
 # Decrypto
-Simple MD5 hexidecimal hash decrypter in Perl. The script googles an MD5 hexidecimal hash and attempts to find it on the first page of the search. Works better than you'd expect...
+Simple MD5 hexidecimal hash decrypter in Perl. The script googles an MD5 hexidecimal hash and attempts to find it on the first page of the search.
 
 ###Prerequisites
 * Perl >= 5.10
